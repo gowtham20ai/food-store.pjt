@@ -14,27 +14,48 @@
         <!-- nav section -->
         <nav class="2xl containermx-auto">
             <div class="w-[90%] mx-auto ">
-                <div class="flex justify-between items-center py-4 text-nowrap text-slate-600 font-[poppins]">
-                    <img src="https://ik.imagekit.io/8wxvbajv2/food-munch-img.png?updatedAt=1748362365283"
-                        alt="food img" class="w-xl h-[80px]  ">
-                    <ul class=" hidden md:flex justify-between items-end gap-10 ">
+                <div class=" md:flex md:justify-between md:items-center ">
+                    <div
+                        class=" flex justify-between items-center   md:flex md:justify-between md:items-center md:py-4 md:text-nowrap text-slate-600 font-[poppins]  ">
+                        <img src="https://ik.imagekit.io/8wxvbajv2/food-munch-img.png?updatedAt=1748362365283"
+                            alt="food img" class="w-xl h-[80px]  ">
+
+                        <!-- <ul class=" flex flex-col items-center   md:flex md:justify-between md:items-end gap-10 ">
                         <li><a href="#choose">Why Choose Us? </a></li>
                         <li><a href="#menu">Explore Menu </a></li>
                         <li><a href="#payment">Delivery & Payment</a></li>
                         <li><a href="#follow">Follow Us</a></li>
-                    </ul>
+                    </ul> -->
 
-                    <div class=" block md:hidden ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-align-justify-icon lucide-align-justify">
-                            <path d="M3 12h18" />
-                            <path d="M3 18h18" />
-                            <path d="M3 6h18" />
-                        </svg>
+                        <div class=" flex transition-all  block md:hidden ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-align-justify-icon lucide-align-justify  "
+                                id="open_menu">
+                                <path d="M3 12h18" />
+                                <path d="M3 18h18" />
+                                <path d="M3 6h18" />
+                            </svg>
+
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-x-icon lucide-x hidden " id="close_menu">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </div>
 
                     </div>
-
+                    <div class=" flip-scale-up-hor hidden md:block" id="menu_list">
+                        <ul
+                            class=" flex flex-col items-center gap-4 md:flex md:flex-row md:justify-between md:items-center md:space-x-5 md:text-nowrap text-slate-600 font-[poppins]">
+                            <li><a href="#choose">Why Choose Us? </a></li>
+                            <li><a href="#menu">Explore Menu </a></li>
+                            <li><a href="#payment">Delivery & Payment</a></li>
+                            <li><a href="#follow">Follow Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -59,7 +80,7 @@
         </div>
     </div>
     <!-- choose -->
-    <div class="2xl-container mx-auto "id="choose">
+    <div class="2xl-container mx-auto " id="choose">
         <div class="w-[90%] mx-auto ">
             <div class="p-[10px] m-[10px] ">
                 <h1 class="font-[poppins] text-[30px]">Why Choose Us?</h1>
@@ -68,12 +89,12 @@
         </div>
     </div>
     <!-- Cardsection -->
-    <div class="2xl-container mx-auto" >
-        <div class="w-[90%] mx-auto " >
-            <div class=" flex justify-normal items-center  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+    <div class="2xl-container mx-auto">
+        <div class="w-[90%] mx-auto ">
+            <div class=" flex justify-between items-center gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 <!-- card-1 -->
-                <div class=" w-[300px] h-[370px] bg-white rounded-xl shadow-2xl mt-[20px] ">
-                    <div class="flex flex-col justify-center items-center gap-4 p-[10px]">
+                <div class="  bg-white rounded-xl shadow-2xl mt-[20px] p-[10px]  ">
+                    <div class="flex flex-col justify-center items-center gap-8 p-[5px]">
                         <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/food-serve.png?updatedAt=1748432524581"
                             alt="Food Image 1" class="rounded-lg ">
                         <h1 class="text-[24px]">Food Service</h1>
@@ -83,8 +104,8 @@
                     </div>
                 </div>
                 <!-- card-2 -->
-                <div class=" w-[300px] h-[370px] bg-white rounded-xl shadow-2xl mt-[20px] ">
-                    <div class="flex flex-col justify-center items-center gap-4 p-[10px]">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
+                    <div class="flex flex-col justify-center items-center gap-4 p-[5px]">
                         <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/fruits-img.png?updatedAt=1748432613798"
                             alt="Food Image 2" class="rounded-lg ">
                         <h1 class="text-[24px]">Fresh Food</h1>
@@ -95,8 +116,8 @@
                     </div>
                 </div>
                 <!-- card-3 -->
-                <div class=" w-[300px] h-[370px] bg-white rounded-xl shadow-2xl mt-[20px] ">
-                    <div class="flex flex-col justify-center items-center gap-4 p-[10px]">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px]  p-[10px] ">
+                    <div class="flex flex-col justify-center items-center gap-4 p-[24px]">
                         <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/offers-img.png?updatedAt=1748432612647"
                             alt="Food Image 3" class="rounded-lg ">
                         <h1 class="text-[24px]">Best Offers</h1>
@@ -113,11 +134,11 @@
         <div class="w-[80%] mx-auto ">
             <h1 class="font-[poppins] text-[30px] mt-[80px] " id="menu">Explore Menu</h1>
             <div
-                class="flex justify-between items-center gap-5  grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 flex-nowrap">
+                class="flex justify-between items-center gap-5  grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 flex-nowrap">
                 <!-- menu-1 -->
-                <div class="w-[200px] h-[260px] bg-white rounded-xl shadow-2xl mt-[20px] p-[5px] ">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px] p-[5px] ">
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/em-ginger-fried-img.png?updatedAt=1748437336815"
-                        alt=food-1 class="w-[180px] h-[200ppx] rounded-lg p-xl mt-lg">
+                        alt=food-1 class=" rounded-lg p-xl mt-lg">
 
                     <p class="text-[15px] text-slate-500 mt-[10px]">Non-veg Starters</p>
                     <p class="text-yellow-400 mt-[10px] flex items-center">View All
@@ -129,9 +150,9 @@
                     </p>
                 </div>
                 <!-- menu-2 -->
-                <div class="w-[200px] h-[260px] bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/em-veg-starters-img.png?updatedAt=1748437332402"
-                        alt=food-1 class="w-[180px] h-[200ppx] rounded-lg p-xl mt-lg">
+                        alt=food-1 class=" rounded-lg p-xl mt-lg">
 
                     <p class="text-[15px] text-slate-500 mt-[10px]">veg Starters</p>
                     <p class="text-yellow-400 mt-[10px] flex items-center">View All
@@ -143,9 +164,9 @@
 
                 </div>
                 <!-- menu-3 -->
-                <div class="w-[200px] h-[260px] bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/em-soup-img.png?updatedAt=1748437341241"
-                        alt=food-1 class="w-[180px] h-[200ppx] rounded-lg p-xl mt-lg">
+                        alt=food-1 class=" rounded-lg p-xl mt-lg">
 
                     <p class="text-[15px] text-slate-500 mt-[10px]">Soups</p>
                     <p class="text-yellow-400 mt-[10px] flex items-center">View All
@@ -157,9 +178,9 @@
 
                 </div>
                 <!-- menu-4 -->
-                <div class="w-[200px] h-[260px] bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/em-grilled-seafood-img.png?updatedAt=1748437338051"
-                        alt=food-1 class="w-[180px] h-[200ppx] rounded-lg p-xl mt-lg">
+                        alt=food-1 class=" rounded-lg p-xl mt-lg">
 
                     <p class="text-[15px] text-slate-500 mt-[10px]">Fish & Sea food</p>
                     <p class="text-yellow-400 mt-[10px] flex items-center">View All
@@ -171,9 +192,9 @@
 
                 </div>
                 <!-- menu-5 -->
-                <div class="w-[200px] h-[260px] bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/em-hyderabadi-biryani-img.png?updatedAt=1748437335797"
-                        alt=food-1 class="w-[180px] h-[200ppx] rounded-lg p-xl mt-lg">
+                        alt=food-1 class=" rounded-lg p-xl mt-lg">
 
                     <p class="text-[15px] text-slate-500 mt-[10px]">Main Course</p>
                     <p class="text-yellow-400 mt-[10px] flex items-center">View All
@@ -185,9 +206,9 @@
 
                 </div>
                 <!-- menu-6 -->
-                <div class="w-[200px] h-[260px] bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/em-mushroom-noodles-img.png?updatedAt=1748437339118"
-                        alt=food-1 class="w-[180px] h-[200ppx] rounded-lg p-xl mt-lg">
+                        alt=food-1 class=" rounded-lg p-xl mt-lg">
 
                     <p class="text-[15px] text-slate-500 mt-[10px]">Noodles</p>
                     <p class="text-yellow-400 mt-[10px] flex items-center">View All
@@ -199,9 +220,9 @@
 
                 </div>
                 <!-- menu-7 -->
-                <div class="w-[200px] h-[260px] bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/em-gluten-img.png?updatedAt=1748437334066"
-                        alt=food-1 class="w-[180px] h-[200ppx] rounded-lg p-xl mt-lg">
+                        alt=food-1 class=rounded-lg p-xl mt-lg">
 
                     <p class="text-[15px] text-slate-500 mt-[10px]">Salads</p>
                     <p class="text-yellow-400 mt-[10px] flex items-center">View All
@@ -213,9 +234,9 @@
 
                 </div>
                 <!-- menu-8 -->
-                <div class="w-[200px] h-[260px] bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
+                <div class=" bg-white rounded-xl shadow-2xl mt-[20px] p-[10px] ">
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/em-coffee-bourbon-img.png?updatedAt=1748437340145"
-                        alt=food-1 class="w-[180px] h-[200ppx] rounded-lg p-xl mt-lg">
+                        alt=food-1 class=" rounded-lg p-xl mt-lg">
 
                     <p class="text-[15px] text-slate-500 mt-[10px]">Desserts</p>
                     <p class="text-yellow-400 mt-[10px] flex items-center">View All
@@ -234,12 +255,12 @@
 
     <div class="2xl-container mx-auto">
         <div class="w-[90%] mx-auto">
-            <div class=" grid grid-cols-1  md:grid-cols-3 gap-5">
+            <div class=" grid grid-cols-1  md:grid-cols-3 gap-10 ">
                 <div>
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/healthy-food-plate-img.png?updatedAt=1748445275918"
                         alt="Healthy Food" class=" rounded-lg mt-[50px] ">
                 </div>
-                <div class=" col-span-2  flex flex-col justify-center gap-5">
+                <div class=" col-span-2  flex flex-col justify-center mt-10 gap-5">
                     <h1 class="font-[poppins] text-[25px] ">Fresh, Healthy, Organic, Delicious Fruits </h1>
                     <p class="text-slate-500 font-[poppins] text-[15px]">Say no to harmful chemicals and go fully
                         organic with our range of fresh fruits and veggies.
@@ -277,7 +298,7 @@
         </div>
         <!-- cash -->
         <div class="2xl-container mx-auto">
-            <div class="w-[90%] mx-auto" >
+            <div class="w-[90%] mx-auto">
                 <div class="flex  justify-start gap-5  ">
                     <img src="https://ik.imagekit.io/8wxvbajv2/food%20store/visa-card-img.png?updatedAt=1748452919502"
                         alt="visa-image" class="h-[70px]">
@@ -353,7 +374,25 @@
                 </div>
             </div>
 
+ <script>
+    var open_menu = document.getElementById("open_menu");
+    var close_menu = document.getElementById("close_menu");
+    var menu_list = document.getElementById("menu_list");
+    
+    open_menu.addEventListener("click" ,() =>{
+        console.dir(menu_list)
+        menu_list.classList.remove("hidden");
+          open_menu.classList.add("hidden");
+        close_menu.classList.remove("hidden");
+    });
 
+    close_menu.addEventListener("click" , () =>{
+         menu_list.classList.add("hidden");
+          open_menu.classList.remove("hidden");
+        close_menu.classList.add("hidden");
+    })
+   
+ </script>
 
 </body>
 
